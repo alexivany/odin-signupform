@@ -109,12 +109,13 @@ input {
   border: 1px solid rgb(150, 150, 150);
   padding: 0.25rem;
   border-radius: .5rem;
-  transition: box-shadow 150ms;
+  box-sizing: border-box;
+  transition: box-shadow 150ms, border 200ms;
 }
 input:focus {
-  outline: none;
-  border: 2px solid rgb(255, 220, 50);
-  box-shadow: .4rem .5rem  black;
+  border: none;
+  outline: 2px solid rgb(255, 220, 50);
+  box-shadow: .4rem .6rem  black;
 }
 label {
   font-size: 0.9rem;
