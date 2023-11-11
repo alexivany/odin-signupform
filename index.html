@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="img-container">
+      <img class="header-img" src="./img/01.jpg" alt="" />
+      <div class="logo-container">
+        <img class="logo-img" src="./img/smile-icon.svg" alt="" />
+        <h1>ODIN</h1>
+      </div>
+    </div>
+    <div class="form-container">
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.<br />Sign up
+        <span class="italic">now</span> to get started.
+      </p>
+      <p>You <span class="italic">know</span> you want to.</p>
+      <div class="input-container">
+        <h2>Let's do this!</h2>
+        <form id="form">
+          <fieldset>
+            <label for="fname">FIRST NAME</label><br />
+            <input type="text" id="fname" name="fname" required /><br />
+          </fieldset>
+          <fieldset>
+            <label for="lname">LAST NAME</label><br />
+            <input type="text" id="lname" name="lname" required /><br />
+          </fieldset>
+          <fieldset>
+            <label for="email">EMAIL</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              pattern=".+@example\.com"
+              required
+            /><br />
+          </fieldset>
+          <fieldset>
+            <label for="phone">PHONE NUMBER</label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            /><br />
+          </fieldset>
+          <fieldset>
+            <label id="psw-label" for="psw">PASSWORD</label><br />
+            <input
+              type="password"
+              id="psw"
+              name="password"
+              minlength="8"
+              required
+              class=""
+            />
+            <br />
+          </fieldset>
+          <fieldset>
+            <label for="pswconfirm">CONFIRM PASSWORD</label><br />
+            <input
+              type="password"
+              id="pswconfirm"
+              name="pswconfirm"
+              minlength="8"
+              required
+              class=""
+            />
+            <br />
+          </fieldset>
+
+          
+        </form>
+        
+      </div>
+      <div class="login-container">
+        <input type="submit" id="submit" form="form" value="Create Account" />
+        <p class="login">Already have an account? <a href="">Log in</a></p>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
